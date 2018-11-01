@@ -266,6 +266,7 @@ public abstract class ChartBaseManager<T extends Chart, U extends Entry> extends
      * General axis config details: https://github.com/PhilJay/MPAndroidChart/wiki/The-Axis
      */
     protected void setCommonAxisConfig(Chart chart, AxisBase axis, ReadableMap propMap) {
+        axis.removeAllLimitLines();
         // what is drawn
         if (BridgeUtils.validate(propMap, ReadableType.Boolean, "enabled")) {
             axis.setEnabled(propMap.getBoolean("enabled"));
