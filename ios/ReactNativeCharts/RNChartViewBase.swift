@@ -207,6 +207,8 @@ open class RNChartViewBase: UIView, ChartViewDelegate {
     
     func setCommonAxisConfig(_ axis: AxisBase, config: JSON) {
         
+        axis.removeAllLimitLines();
+        
         // what is drawn
         if config["enabled"].bool != nil {
             axis.enabled = config["enabled"].boolValue
