@@ -295,9 +295,9 @@ class BridgeUtils {
         return .rightTop
       case "leftTop":
         return .leftTop
-      case "leftBox"
+      case "leftBox":
         return .leftBox
-      case "rightBox"
+      case "rightBox":
         return .rightBox
       default:
         return .rightTop
