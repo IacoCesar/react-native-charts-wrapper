@@ -310,6 +310,10 @@ class BridgeUtils {
         return .rightTop
       case "leftTop":
         return .leftTop
+      case "leftBox"
+        return .leftBox
+      case "rightBox"
+        return .rightBox
       default:
         return .rightTop
       }
